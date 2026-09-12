@@ -137,6 +137,7 @@
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
     .about-card{background:#fff;padding:34px;border-radius:var(--radius);box-shadow:var(--shadow);border-left:5px solid var(--gold)}
     .about-card p{color:var(--muted);margin-bottom:15px}
+    <a href="#leadership">Leadership</a>
     .checklist{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:24px}
     .check{font-weight:700;font-size:14px}.check:before{content:"✓";color:var(--gold);font-weight:900;margin-right:8px}
 
@@ -196,7 +197,15 @@
       .hero p{font-size:16px}.stats-grid{grid-template-columns:1fr 1fr}.stat{padding:18px 10px}
       .services-grid,.industry-grid,.footer-grid{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}
       .brand img{width:155px}.copyright{flex-direction:column}
-    }
+    } @media(max-width:700px){
+  #leadership > .container > div:last-child{
+    grid-template-columns:1fr !important;
+  }
+
+  #leadership > .container > div:last-child > div:last-child{
+    padding:30px 24px !important;
+  }
+}
   </style>
 </head>
 <body>
@@ -271,7 +280,89 @@
       </div>
     </div>
   </section>
+<section id="leadership" style="background:#f5f9fd;">
+  <div class="container">
 
+    <div class="section-head center">
+      <div class="kicker">Our Leadership</div>
+      <h2>Meet Our Managing Director</h2>
+      <p class="lead">Leading SUNIPA SHIPPING LINE LTD. with professionalism and dedication.</p>
+    </div>
+
+    <div style="
+      max-width:950px;
+      margin:auto;
+      background:#fff;
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:380px 1fr;
+      align-items:center;
+    ">
+
+      <div style="background:#eef5fa;padding:30px;">
+        <img
+          src="managing-director.jpg"
+          alt="Mr. Biswajit Sen Gupta, Managing Director of SUNIPA SHIPPING LINE LTD."
+          style="
+            width:100%;
+            max-width:320px;
+            margin:auto;
+            border-radius:14px;
+            box-shadow:0 12px 30px rgba(6,40,90,.15);
+          "
+        >
+      </div>
+
+      <div style="padding:45px;">
+        <div class="kicker">Managing Director</div>
+
+        <h3 style="
+          color:var(--navy);
+          font-size:32px;
+          margin-bottom:8px;
+        ">
+          Mr. Biswajit Sen Gupta
+        </h3>
+
+        <p style="
+          color:var(--blue);
+          font-weight:800;
+          font-size:17px;
+          margin-bottom:25px;
+        ">
+          Managing Director
+        </p>
+
+        <div style="display:grid;gap:16px;color:var(--muted);">
+
+          <div>
+            <strong style="color:var(--navy);">📍 Office Address</strong><br>
+            Commercial Court (3rd Floor), Agrabad Commercial Area,
+            Chattogram, Bangladesh
+          </div>
+
+          <div>
+            <strong style="color:var(--navy);">☎ Phone</strong><br>
+            <a href="tel:+8801819940850">01819-940850</a><br>
+            <a href="tel:+8801815569170">01815569170</a>
+          </div>
+
+          <div>
+            <strong style="color:var(--navy);">✉ Email</strong><br>
+            <a href="mailto:biswajitsen686@gmail.com">
+              biswajitsen686@gmail.com
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
   <section id="services">
     <div class="container">
       <div class="section-head center">

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sunipashippingline.github.io/Sunipa-Shipping/sitemap.xml
